@@ -1,0 +1,63 @@
+%% Appendix 2
+\pagenumbering{arabic}  % This will reset the page numbering
+%\thispagestyle{empty} % use this if page number needs to be removed
+\section{References}\label{App:B}
+
+The text must include references to the sources you use. LUT University applies the Harvard referencing style, also called the author-date style, with in-text referencing and a detailed reference list at the end.
+
+The purpose of a reference list is to provide sufficient information on a source used in the study, allowing the reader to consult the original source for further information. The reference enables the reader to find detailed information on the source easily in the list of references. You should refer to the original and most recent sources. If no new studies have been published on the topic in question, also older ones may be used.
+
+Referring to a source means that you explain the contents of the source material in your own words. Direct citations, on the other hand, are placed inside quotes \enquote{Quote}. Plagiarism or using another person’s original material without appropriate referencing is not allowed.
+
+\subsection*{Referencing technique}
+
+In the Harvard system, the citation is placed in parentheses directly in the text to indicate the passage that has been cited from another source. Place the citation before the period that ends the sentence when it refers only to the sentence in question \citep{CitekeyInbook2}. If you are referring to more than that one sentence, introduce the source you are summarizing or paraphrasing at the beginning of the paragraph. Then, refer back to the source when needed to ensure your reader understands you are still using the same source. In-text references, specifying page numbers, are not used unless a specific part of the text is directly referred to or it is a direct quotation. Please note that the author does not always have to be an individual but can also be, for example, an organization. If the publication's author does not appear in the source, the name of the publication is referred to instead of the author's name.
+
+\subsubsection*{Author's name cited in the text (direct)}
+Direct citation is used when the author’s name(s) is a part of the sentence structure, with the year in parentheses. The following is obtained by using \verb+\citet{key}+ command.
+\begin{quote}
+\citet{All87} claims that \ldots
+\end{quote}
+More than three authors for a work
+\begin{quote}
+\citet{CHOWDHURY} in their work \ldots
+\end{quote}
+On some special occasions, all the authors (more than three) can be cited, but this form should be considered only at the \emph{special} case by using \verb+\citet*{key}+ command
+\begin{quote}
+\citet*{Biz98} showed \ldots
+\end{quote}
+
+\subsubsection*{Author's name not cited in the text (indirect)}
+Indirect citation is used when the author's name(s) is not mentioned directly in the sentence structure. The indirect citation will appear at the relevant point in the sentence or at the end of the sentence in parentheses. The following is obtained by using \verb+\citep{key}+ command.
+
+\begin{quote}
+Earlier research claims that \ldots \citep{Sav92}.
+\end{quote}
+Two authors with postnote
+\begin{quote}
+At the theoretical approaches of \ldots \citep[102]{All87}.
+\end{quote}
+More than three authors for a work
+\begin{quote}
+\ldots, \citep{VELEVA}.
+\end{quote}
+Combined citation with three entries using the command \verb+\citep{key1,key2,key3}+
+\begin{quote}
+According to previous studies, the presented conclusions are consistent \citep{Mil97,Dal05,All87}.
+\end{quote}
+
+In many situations, it is justified to combine the content of several sources, and then it is recommended to use content-specific indirect references. For example, in the following way:
+\begin{displayquote}[{\cite{Talikka}}][]
+In literature we can find challenges relating to a wide variety of issues including environmental sustainability \citep{DAGILIUTE}, business needs \citep{VELEVA}, food production \citep{CHOWDHURY}, urban development \citep{Joss,swapan,freeman,WAITE}, and education \citep{ZIDANSEK,Biberhofer}.
+\end{displayquote}
+
+A wide variety of sources can be used in the text. In addition to the above, Master's theses \citep{Hyv19}, websites \citep{CitekeyMisc}, interviews \citep[interview 6.6.2007]{CitekeyMisc2}, technical reports \citep{Lai09}, booklets \citep{CitekeyBooklet}, manuals \citep{CitekeyManual}, proceedings \citep{CitekeyProceedings}, standards \citep{standardi}, patents \citep{US5503249} or AI-language models \citep{ChatGPT} can be used.
+
+All the bibliography information is given in the References. If you refer several works published by the same author in the same year, add lowercase letters (a, b, c…) after the publication year to distinguish the sources. Use the same alphabetical notation also in the list of references. There are several referencing and citation styles. It is essential to use the same style throughout the thesis consistently. Examples and detailed instructions on referencing:
+\begin{itemize}
+    \item \href{https://libguides.lut.fi/citingelectronicdocuments}{\textcolor{blue}{LUT Academic Library’s instructions}} on how to cite electronic documents
+    \item \href{https://libguides.aalto.fi/citation_guide}{\textcolor{blue}{Aalto University citation guide}}
+    \item \href{https://www.librarydevelopment.group.shef.ac.uk/referencing/harvard.html}{\textcolor{blue}{Harvard referencing}}, University of Sheffield 
+\end{itemize}
+
+\clearpage % This command will start the next section from the new page

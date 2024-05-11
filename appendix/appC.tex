@@ -1,0 +1,90 @@
+%% Appendix 3
+\pagenumbering{arabic}  % This will reset the page numbering
+%\thispagestyle{empty} % use this if pagenumber needs to be removed
+\section{Tables, figures, equations, numbers, symbols, and abbreviations }\label{App:C}
+
+It is a good idea to illustrate your text with figures and tables. Figures and tables must have captions and consecutive numbering. The captions of tables are placed above the table, and those of figures are below the figure. Refer to the figures and tables in the text body, preferably before you introduce them, and align them with the text body. In many theses, the alignment of figures and tables has been centered and without wrapping text around them, but the author can select the formatting options as long as they are coherent in the whole work. \LaTeX~ tries to place all floating objects (figures and tables) at the top of the page or in the best place and to avoid multiple floating objects on the same page. Because of this, for several floating objects in series, their position can be shifted several pages forward. It is also possible for floating objects to move to the next section. Because of this, several consecutive floating objects should be avoided, and enough text should be added between the floating objects. In this template \verb|\usepackage[section]{placeins}| setting is used to force floating objects to stay in the appearing section. You can also use \verb|\FloatBarrier| command to set a position limit for floating objects.
+
+Remember to add alt text (alternative text) to your figures and tables to ensure accessibility. Alt text is read by a designated reader and can be viewed even when the image cannot be displayed on the page. In \LaTeX~the alt text has to be set manually and you should make sure it describes the object sufficiently and understandably. You can add the alt text by using the command \verb|\pdftooltip{Object}{Alt-text}|.
+
+\subsection*{Tables}
+Give your table number and caption, and refer to them in the text. Place the caption above the table, name its columns, and mention the units applied, as in Table \ref{tab:1} below. Avoid empty columns or rows. The recommended font size is 10.
+
+\begin{table}[!h]
+    \centering
+    \caption{Sensor measurements.}
+    \pdftooltip{\begin{tabular}{|c|c|}
+        \hline
+        Voltage $U$ [V] & Pressure $p$ [Pa] \\
+        \hline\hline
+        0.984 & 0 \\
+        2.252 & 150 \\
+        2.772 & 300 \\
+        3.181 & 450 \\
+        3.615 & 600 \\
+        3.817 & 750 \\
+        4.088 & 900 \\
+        \hline
+    \end{tabular}}{Example of table layout. In the table, the presentation of sensor measurement data is presented. Data includes measured voltage and pressure pairs for seven individual measurements.}
+    \label{tab:1}
+\end{table}
+
+\section*{Figures, charts, graphic elements}
+Images help illustrate your text. The text should contain a reference to every figure. Number your figures and place a caption underneath – not inside the figure.
+
+You should use a software program like Excel or Matlab to draw charts. Charts should be clear and easy to understand. Use a white background. A background grid is allowed if it does not make the figure difficult to interpret. Variables and measurement points should be clearly visible. Name the axes and their units. An example script to produce a Figure \ref{fig:1} with Matlab is presented in Appendix \ref{App:E}. To maintain full accessibility of the document, you should use embedded fonts in the vector figures. The example script will not produce a figure with embedded fonts, and the jpg or png formats would be better with respect to document accessibility. However, the figure quality is reduced.
+
+\begin{figure}[!h]
+   \centering
+    \pdftooltip{\includegraphics[width=.5\textwidth]{figs/example_name.pdf}}{Example result figure produced by Matlab software. The figure illustrates the sine function in a range from 0 to three pi. The scaling of font size from the original 18pt to the thesis size of approximately 12pt is illustrated.}
+    \caption{Illustration of Matlab example figure.}
+    \label{fig:1}
+\end{figure}
+
+Create as many of the figures yourself as you can. Use the same font as in the text body and equations. Try to maintain the font size in the figure as close as possible to the main text font size. If you use images created by someone else, remember to cite them correctly. Remember that images are copyrighted works, the use of which must always be authorized by the author. Captions need to be in the same language as the text body.
+
+Figure \ref{fig:2} shows a gas fermenter in a laboratory configuration. The image is positioned at the beginning of the page, and with the command \verb|\FloatBarrier|, the following text is forced to appear after the image.
+
+\begin{figure}[t]
+   \centering
+    \pdftooltip{\includegraphics[width=.5\textwidth]{figs/Picture1.png}}{Example picture of the gas fermentor. The picture illustrates the test equipment and measurement arrangements in the laboratory.}
+    \caption[Short description for List of Figures]{Gas fermentor (VTT 2020, LUT image bank).}
+    \label{fig:2}
+\end{figure}
+\FloatBarrier
+
+Do not end a paragraph in a figure or table. Add text underneath, such as comments on the figure. Large figures, tables, long equations, and other supporting material can be appended.
+
+\subsection*{Numbers, symbols and equations}
+
+Numbers in the text are usually approximations. Their accuracy depends on the observational error. Include only significant figures in the results. Interim results should include at least two figures more to avoid round-off errors. Present large and small figures in powers of ten $10^n$, where $n$ should preferably be divisible by three.
+
+Equations and other mathematical expressions must consist of standardised symbols if one exists. You may use other symbols only if there are no applicable standardized or established ones. Variables and constants are denoted using \textit{slanted style}, vectors are denoted using \textbf{bold regular style}, and abbreviations and dimensionless numbers are denoted using regular style. See the SI-unit \href{https://physics.nist.gov/cuu/Units/checklist.html}{\textcolor{blue}{style guide}}.
+
+Explain the symbols in an equation when you use them for the first time. Write each equation clearly on its own line and indent it. Number your equations consecutively or by paragraphs so that the number is in parentheses on the right side of the equation and aligned to the right. You can refer to an equation only after you have presented it, with certain exceptions, such as if the object you are referring to is far ahead. Example equation:
+
+\begin{equation}
+    pv=RT
+\end{equation}
+
+where $p$ is pressure [Pa], $v$ is specific volume [$\mathrm{m^3/kg}$], $R$ is the gas constant [J/(kgK)] and $T$ is temperature [K].
+
+The SI-unit style should be followed. Here are some common guidelines for using variables, constants, and units correctly:
+\begin{itemize}
+    \item Write scalars in italics and vectors in bold, not in italics. Don’t write dimensionless quantities in italics.
+    \item Don't use $*$ multiplier in your equations. Present the variables to be multiplied in the equations in consecutive order, placing the numerical scalar value first, without any multiplier sign. Exceptions: for $1.452\times10^6$ or when you place numerical values into the equations in the example calculations, use \verb|\times| command for a multiplier. In the latter case, remember to show the units as well.
+    \item Use only single-character variables to avoid mistakes with previous point. You may use subscripts to separate variables.
+    \item Write subscripts upright unless there is a need to italicise them (they are variables). Write abbreviated subscripts and numerals e.g., as follows: $\Delta\sigma_{\mathrm{w}}$, $\sigma_1$, or $\sigma_\mathrm{min}$. For instance, in the summation $\sum_i^\infty x_i$, the subscript $i$ must be italicised because it represents a variable.
+    \item If you wish to express a change in, e.g. pressure $\Delta p$, write $\Delta$ in a regular font. In some cases, $\varDelta$ may also be variable and should be italicised. $\uppi = 3.14159$ is the ratio of a circle’s circumference to its diameter. $\pi$ may be the pressure ratio.
+    \item Do not italicise mathematical operators such as $\sin(x)$, $\cos(x)$, $\log(y)$, or $\ln(y)$.
+    \item Distinguish absolute values as follows: "variable\textunderscore=\textunderscore value\textunderscore unit", with the exception of a percentage sign after a numeral, e.g. $a$ = 5.2 mm, $\gamma$ = 97.7\%.
+    \item Use a decimal point "." in accordance with international standards. In contrast, a decimal comma is used in theses written in Finnish. This also applies to figures and tables.
+\end{itemize}
+
+\subsection*{List of symbols and abbreviations}
+
+List symbols and abbreviations and their definitions that are not common knowledge separately on their own page before the table of contents. Divide them into groups: Latin characters, Greek characters, subscripts, superscripts, abbreviations, and finally, dimensionless numbers. Give the page the heading Symbols if there are no abbreviations or Abbreviations if there are no symbols. 
+
+When you use a symbol or abbreviation in the text body for the first time, introduce it to the reader, for example, as follows: \enquote{The concept design for manufacturing and assembly (DFMA) is\ldots}. After this, you can use only the abbreviation, and the reader can verify its meaning from the abbreviation list. Do not add concepts to the list of symbols and abbreviations you do not mention in your text. Don't include standard, well-known elements or species (e.g., oxygen $\mathrm{O_2}$ or carbon dioxide $\mathrm{CO_2}$) definitions in the abbreviations. 
+
+\clearpage % This command will start the next section from the new page
