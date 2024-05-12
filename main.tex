@@ -27,7 +27,7 @@
 %% Mandatory data %
 %%%%%%%%%%%%%%%%%%%
 \begin{filecontents*}[overwrite]{\jobname.xmpdata}
-\Title{Why do developers participate in open source project?}
+\Title{Why do developers participate in open source software project?}
 \Author{Jouni Ritvanen}
 \Language{en-GB}
 \Subject{The abstract or short description.}
@@ -41,13 +41,12 @@
 % give you name here, will be printed on the front page, abstract, and tiivistelmä.
 \def\myname{Duc Thinh Tran}
 % give your thesis information here (English), which will be printed on the front page and abstract.
-\def\mytitle{Why do developers participate in open source projects?}
+\def\mytitle{Why do developers participate in open source software projects?}
 \def\mysubtitle{Version \version}       % subtitle
 %%\def\mysubtitle{}                     % no subtitle
 \def\university{Lappeenranta–Lahti University of Technology LUT}
 \def\school{LUT School of Engineering Science}
 \def\thesisyear{2024}
-% \def\thesistype{Mas’s thesis}
 \def\thesistype{Master’s thesis}
 \def\degreeprogramme{Degree Programme in Software Product Management and Business}
 %%\def\degreeprogramme{Degree Programme in Business Administration}
@@ -114,19 +113,19 @@
 \addtocontents{toc}{\cftpagenumbersoff{section}} % Add "Appendices" to table of content without page number
 % Modify the section heading to contain "Appendix" at the beginning
 \titleformat{\section}
-  {\Large}
-  {Appendix \thesection}{1em}{}
+{\Large}
+{Appendix \thesection}{1em}{}
 
 % Appendices
 \begin{appendices}
-\renewcommand{\thesection}{\arabic{section}}    % Numbering style
-\input{appendix/appA}            % Add appendix 1
-% \input{appB}            % Add appendix 2
-% \input{appC}            % Add appendix 3
-% \input{appD}            % Add appendix 4
-% \input{appG}            % Add appendix 5
-% \input{appE}            % Add appendix 6
-% \input{appF}            % Add appendix 7
+  \renewcommand{\thesection}{\arabic{section}}    % Numbering style
+  \input{appendix/appA}            % Add appendix 1
+  % \input{appB}            % Add appendix 2
+  % \input{appC}            % Add appendix 3
+  % \input{appD}            % Add appendix 4
+  % \input{appG}            % Add appendix 5
+  % \input{appE}            % Add appendix 6
+  % \input{appF}            % Add appendix 7
 \end{appendices}        % End of appendix sections
 
 \end{document}          % End of document
