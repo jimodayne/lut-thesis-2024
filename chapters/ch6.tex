@@ -1,5 +1,5 @@
 \section{Review reporting}
-\subsection{Primary motivation for developers contributing in open source}
+\subsection{RQ1: Primary motivation for developers contributing in open source}
 The main purpose of this study is to find the movitvation of developers contributing in OSS project. For each selected study, I analyzed any motivation reported that was empirically identified or evaluated.
 
 \subsubsection{Intrinsic motivations}
@@ -95,7 +95,7 @@ By participating in open-source projects, developers can access and contribute t
 
 3. External rewards
 
-While publicly discussions often prioritize the significance of intrinsic motivations, extrinsic rewards such as promotions, financial incentives, increased compensation, and professional advancement remain potent drivers of developer participation in open-source projects. Tangible rewards hold substantial appeal, particularly for those who utilize open-source involvement as a strategic tool for career development and financial gain. Within a highly competitive labor market emphasizing demonstrable skills and practical experience, active open-source contributions tangibly augment a developer's professional credentials and enhance their overall marketability.
+While publicly discussions often prioritize the significance of intrinsic motivations, extrinsic rewards such as promotions, financial incentives, increased compensation, and professional advancement remain potent drivers of developer participation in open-source projects \cite{05bitzer2007intrinsic,06ye2003toward,07zhao2024openrank,11gerosa2021shifting,13li2012leadership,15roberts2006understanding,17alexander2002working,18oreg2008exploring}. Tangible rewards hold substantial appeal, particularly for those who utilize open-source involvement as a strategic tool for career development and financial gain. Within a highly competitive labor market emphasizing demonstrable skills and practical experience, active open-source contributions tangibly augment a developer's professional credentials and enhance their overall marketability.
 
 Developers may be drawn by the potential financial returns derived from open-source participation, such as new job opportunities or consulting contracts. By establishing a visible record of expertise and successful contributions, developers attract the attention of companies or clients who value their skills, potentially leading to lucrative positions. Beyond traditional employment, open-source involvement can serve as a foundation for supplementary income streams, such as consulting services, training workshops, or speaking engagements, which cultivate both financial rewards and professional recognition.
 
@@ -121,7 +121,7 @@ One of the defining characteristics of OSS projects is the transformation of rol
 
 Furthermore, the ability to directly address user needs serves as a significant motivator for developers to contribute to open-source projects.  Whether these needs arise from professional or personal endeavors, developers within the OSS community are driven by the desire to create software that solves real-world problems and enhances the user experience.  This direct connection between developers and users fosters a collaborative environment where both parties benefit from the shared knowledge and dedication to continuous improvement.
 
-\subsection{Impact of social dynamics}
+\subsection{RQ2: Impact of social dynamics}
 
 In addition to investigating the motivations of developers, this research also examined the significant influence of social dynamics on the participation of developers in open-source projects. Through a comprehensive analysis of 13 pertinent studies selected from a pool of over 20 papers, this research has yielded several key findings. These findings highlight the multifaceted nature of developer engagement in open-source initiatives and underscore the importance of social interactions in shaping participation patterns. The subsequent sections will elaborate on these findings, providing a nuanced understanding of the interplay between individual motivations and social forces within the open-source software development ecosystem.
 
@@ -175,7 +175,44 @@ Through the implementation of the OpenRank Leaderboard, the study found that dev
 The findings of the study indicated that the OpenRank Leaderboard effectively evaluates and steers developers' contributions, leading to positive behavioral changes and enhanced collaboration habits. Developers expressed a favorable perception of using graph network algorithms for contribution evaluation, with many acknowledging the alignment of rankings with their community perceptions and the value of combining results with community incentive operations. Overall, the study contributes valuable insights into the impacts and perceptions of using leaderboards as a gamification mechanism in company-led open source projects, emphasizing the importance of social network evaluation in motivating open source collaborations and driving innovation in software development.
 
 
-\subsection{Contribution barriers}
+\subsection{RQ3: Contribution barriers}
+
+Beyond examining the motivations and social dynamics that propel developer participation in open-source projects, this research also delved into the barriers hindering their contributions. Through an analysis of five selected studies, several key challenges were identified that impede developer engagement and limit their ability to contribute effectively. The following sections will explore these barriers in detail, providing a comprehensive overview of the obstacles developers face in the open-source software development landscape. Based on a previous study by Mariam \cite{04guizani2021long}, the barriers to contribution were categorized into three main categories: technical challenges, social challenges, and process challenges. Each category encompasses distinct obstacles that hinder developer participation and require targeted interventions to overcome.
+
+
+\subsubsection{Technical challenges}
+
+A significant technical barrier to open-source contribution is the lack of technical background and domain expertise among potential contributors. Without a foundational understanding of the project's technological underpinnings, whether it's a specific programming language, framework, or software architecture, individuals may struggle to effectively engage and contribute to its development. Additionally, a lack of domain expertise in the subject matter the project addresses can hinder understanding of the problem space and the proposed solutions, making it difficult to provide meaningful contributions.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/contributor_background.png}
+    \caption{The background of the 223 developers from Apache Software Foundation \cite{04guizani2021long}}
+    \label{fig:contributor_background}
+\end{figure}
+
+The diversity of programming languages used within and across open-source projects presents another challenge. Many projects utilize multiple languages for different components, and the open-source ecosystem as a whole encompasses a vast array of programming languages. Contributors often need to familiarize themselves with these languages to effectively understand and modify code, which can be daunting and time-consuming, particularly for those with limited programming experience or those accustomed to a single language.
+
+Discrepancies in technical skills and knowledge backgrounds among contributors can create a challenging environment for newcomers \cite{01steinmacher2015systematic}. Open-source projects often attract individuals with varying levels of expertise, from seasoned developers to those just starting their coding journey. Navigating a project with such diverse skill levels can be intimidating, making it difficult for newcomers to find their footing, ask questions without feeling inadequate, and contribute meaningfully.
+
+Inadequate or outdated project documentation further compounds the challenges faced by contributors. Clear, comprehensive, and up-to-date documentation is crucial for understanding the project's codebase, workflow, and contribution guidelines. It serves as a roadmap for new contributors, guiding them through the project's intricacies. Without well-maintained documentation, newcomers may struggle to locate the correct areas for modification, understand the reasoning behind existing code, and follow established conventions, ultimately hindering their ability to contribute effectively to the project's development.
+
+
+
+\subsubsection{Social challenges}
+
+Effective communication is paramount in the open-source landscape, yet it is often fraught with challenges that can impede participation and collaboration. Limitations in the available communication tools, such as reliance on text-based platforms or asynchronous communication channels, can hinder real-time interaction and create misunderstandings. Additionally, diverse communication styles among members, ranging from direct and concise to more elaborate and nuanced, can lead to misinterpretations and impede the development of shared understanding. Moreover, conflicting viewpoints and disagreements within the community, while natural, can escalate into unproductive debates that alienate newcomers and create an unwelcoming environment.
+
+The social dimension of open-source projects is equally crucial, as it fosters a sense of belonging and encourages collaboration. However, newcomers often encounter difficulties establishing connections with project members, particularly in large and established communities. This can lead to feelings of isolation and a lack of mentorship or guidance, making it challenging to navigate the project's intricacies and identify suitable contribution opportunities. Moreover, if newcomers perceive a lack of responsiveness or support from existing members, their enthusiasm may wane, and they may ultimately abandon their efforts.
+
+The responsiveness of the community is a critical determinant of newcomers' experiences and long-term engagement. When individuals feel that their questions are ignored, their contributions are not acknowledged, or their efforts are not valued, they may become demotivated and disengage from the project. Conversely, timely feedback, recognition, and support can boost morale and encourage continued participation. Therefore, fostering a culture of responsiveness and inclusivity is essential for attracting and retaining new contributors.
+
+Cultural aspects, often overlooked but equally significant, can also create barriers for newcomers seeking to integrate into the project community. Different cultural backgrounds and norms can lead to varying expectations regarding communication styles, decision-making processes, and interpersonal interactions. These differences can create misunderstandings and misinterpretations, hindering the establishment of rapport and trust between newcomers and existing members. Additionally, the initial reception and onboarding process for newcomers can significantly impact their experience and willingness to contribute. A welcoming and supportive environment, with clear guidelines and mentorship opportunities, can make a substantial difference in fostering a sense of belonging and encouraging long-term participation.
+
+
+\subsubsection{Process challenges}
+
+
 
 
 
