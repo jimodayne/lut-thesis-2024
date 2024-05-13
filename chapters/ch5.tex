@@ -1,5 +1,3 @@
-%% Jouni Ritvanen, jouni.ritvanen@lut.fi
-%% This section adds chapter 5
 \section{Systematic Literature Review}
 
 Guided by Kitchenham's SLR framework, this study carefully addressed review planning (defining research questions, developing a protocol), conducting (literature search, study selection, data extraction and quality assessment), and reporting \cite{Kitchenham}.
@@ -17,7 +15,7 @@ The figure \ref{fig:slr-overview} shows an overview of my work to execute a syst
 
 \subsection{Review planning}
 
-In chapter \ref{researchQuestions}, I explored the process of defining a research question. Here, I will concentrate on developing a protocol for the initial review planning phase of a \ac{slr}. While numerous scientific databases exist online, selecting the most suitable ones for evidence synthesis can be challenging \cite{academicSearchSystems}. This section will offer guidance on database selection and explain the rationale behind different choices.    
+In chapter \ref{researchQuestions}, I explored the process of defining a research question. Here, I will concentrate on developing a protocol for the initial review planning phase of a \ac{slr}. While numerous scientific databases exist online, selecting the most suitable ones for evidence synthesis can be challenging \cite{academicSearchSystems}. This section will offer guidance on database selection and explain the rationale behind different choices.
 
 
 % Web of Science and Scopus hold a strong reputation as the most reliable and comprehensive citation databases within the academic community \cite{zhu2020tale}. However, 
@@ -31,7 +29,7 @@ Building on a previous study from Chua and Zhang \cite{Chua_Zhang_2020}, I estab
     \item Disciplines in Computer Science, Software Engineering
     \item Publication date: from 2000 to 2024.
     \item Specific search terms ("open source" OR "open source software") AND ("motivation" OR "contribution challenges" OR "social dynamics impact" OR "interest" OR "contribution barriers") within titles or descriptions.
-    \item Prioritization of publications from leading information systems conferences and journals. Ex: ACM/IEEE International Conference on Software Engineering, IEEE Transactions on Software Engineering, Journal of Systems and Software,... 
+    \item Prioritization of publications from leading information systems conferences and journals. Ex: ACM/IEEE International Conference on Software Engineering, IEEE Transactions on Software Engineering, Journal of Systems and Software,...
 \end{itemize}
 
 These search terms were employed to address the three research questions which are categorized in the table \ref{tab:categoriesSearchTerms}.
@@ -40,10 +38,10 @@ These search terms were employed to address the three research questions which a
     \centering
     \begin{tabular}{ | c | l | }
         \hline
-         Category & Search terms \\ \hline
-          1 & OSS motivation and all synonyms \\ \hline
-          2 & Social dynamics impact on OSS and all synonyms \\  \hline
-          3 & Contribution barriers of OSS and all synonyms\\  \hline
+        Category & Search terms                                   \\ \hline
+        1        & OSS motivation and all synonyms                \\ \hline
+        2        & Social dynamics impact on OSS and all synonyms \\  \hline
+        3        & Contribution barriers of OSS and all synonyms  \\  \hline
     \end{tabular}
     \caption{Specific categories of search terms}
     \label{tab:categoriesSearchTerms}
@@ -53,19 +51,18 @@ These search terms were employed to address the three research questions which a
 
 \subsubsection{Data source}
 
-To identify relevant literature, I executed our search strings across multiple databases. Each database was queried with the complete set of search strings, yielding varying results. In some instances, identical search strings produced an overabundance of results, while in others, they returned no results. Databases with no results were excluded from further analysis. The selected databases and their corresponding result counts are presented in the following table \ref{tab:initialSearch}. 
+To identify relevant literature, I executed our search strings across multiple databases. Each database was queried with the complete set of search strings, yielding varying results. In some instances, identical search strings produced an overabundance of results, while in others, they returned no results. Databases with no results were excluded from further analysis. The selected databases and their corresponding result counts are presented in the following table \ref{tab:initialSearch}.
 
 
 \begin{table}[ht]
     \centering
     \begin{tabular}{ | l | c | c | c |}
         \hline
-      Database   & Category 1 & Category 2 & Category 3 \\ \hline
-      Google Scholar   &  244 000 results & 17 800 results  & 175 100 results \\ \hline
-        Springer & 623 results &   161 results &  327 results \\ \hline
-      IEEE   & 396 results & 68 results & 48 results \\ \hline
-      Science Direct & 4 200 results & 97 results & 15 results \\ \hline
-      
+        Database       & Category 1      & Category 2     & Category 3      \\ \hline
+        Google Scholar & 244 000 results & 17 800 results & 175 100 results \\ \hline
+        Springer       & 623 results     & 161 results    & 327 results     \\ \hline
+        IEEE           & 396 results     & 68 results     & 48 results      \\ \hline
+        Science Direct & 4 200 results   & 97 results     & 15 results      \\ \hline
     \end{tabular}
     \caption{Initial search results from scientific databases}
     \label{tab:initialSearch}
@@ -75,14 +72,14 @@ To identify relevant literature, I executed our search strings across multiple d
 
 \subsubsection{Inclusion and exclusion criteria}
 
-To maintain a focused and methodologically review, I used inclusion and exclusion criteria to pinpoint studies aligned with my research questions. These criteria served as a consistent filter for all potential sources. The specific criteria are outlined below, and they were applied to every study retrieved from our selected databases. 
+To maintain a focused and methodologically review, I used inclusion and exclusion criteria to pinpoint studies aligned with my research questions. These criteria served as a consistent filter for all potential sources. The specific criteria are outlined below, and they were applied to every study retrieved from our selected databases.
 
 Inclusion:
 \begin{itemize}
-    \item Accessible: The research paper must be accessible and downloadable either through LUT Academic Library or online database. 
+    \item Accessible: The research paper must be accessible and downloadable either through LUT Academic Library or online database.
     \item Peer-Reviewed: The paper should be published in a reputable, peer-reviewed journal or conference proceedings. This ensures the quality and credibility of the research.
     \item Relevant to research questions: The paper must directly address the specific research questions at hand.
-    \item Methodology transparency: The reasearch and data collection  methodologies must be metioned. 
+    \item Methodology transparency: The reasearch and data collection  methodologies must be metioned.
 \end{itemize}
 
 Exclusion:
@@ -119,33 +116,26 @@ The initial search across various databases yielded approximately 500,000 potent
 
 
 \begin{table}[ht]
-\begin{tabular}{| m{7em} | m{5em}| m{18em} | }
-\hline
-Publisher & Number of articles & Authors \\ \hline
-Elsevier  &          6          &   Bitzer, Schrettl \& Schröder (2007); Choi \& Pruett (2015); Li, Tan \& Teo (2012); Oreg \& Nov (2008); Steinmacher, Silva, Gerosa \& Redmiles (2015); Wu, Gerlach \& Young (2007)   \\ \hline
-     AISNET    &            1        &   Ke \& Zhang, P. (2008)       \\ \hline
-     IEEE  &          3         &      Ye \& Kishida (2003); Gerosa, Wiese, Trinkenreich, Link, Robles, Treude \& Sarma (2021); Zhang, Yuxia (2024)   \\ \hline
-
-     ResearchGate & 1 &  Zhao, Shengyu (2024)  \\ \hline
-  
-   Springer  &          3          &  Steinmacher, Conte, Gerosa \& Redmiles (2019); Fershtman \& Gandal  (2007); Hannemann \& Klamma (2013) ; Hannemann \& Klamma (2013)     \\ \hline
-
-     ACM      &          3          &     Steinmacher, Conte, Gerosa \& Redmiles (2015); Guizani, Chatterjee, Trinkenreich, May, Noa-Guevara, Russell \& Sarma (2021) ; Hannebauer \& Gruhn (2017)    \\ \hline
-     
-        Informs  &          1          &   Roberts, Hann \& Slaughter (2006)      \\ \hline
-Taylor \& Francis Online  &          1          &     Alexander Hars (2002)  \\ \hline
-
-EASST & 1 &  Freeman (2007) \\ \hline
-    
-
-\end{tabular}
-\caption{Selected papers for SLR}
-\label{tab:databasePapers}
+    \begin{tabular}{| m{7em} | m{5em}| m{18em} | }
+        \hline
+        Publisher                & Number of articles & Authors                                                                                                                                                                           \\ \hline
+        Elsevier                 & 6                  & Bitzer, Schrettl \& Schröder (2007); Choi \& Pruett (2015); Li, Tan \& Teo (2012); Oreg \& Nov (2008); Steinmacher, Silva, Gerosa \& Redmiles (2015); Wu, Gerlach \& Young (2007) \\ \hline
+        AISNET                   & 1                  & Ke \& Zhang, P. (2008)                                                                                                                                                            \\ \hline
+        IEEE                     & 3                  & Ye \& Kishida (2003); Gerosa, Wiese, Trinkenreich, Link, Robles, Treude \& Sarma (2021); Zhang, Yuxia (2024)                                                                      \\ \hline
+        ResearchGate             & 1                  & Zhao, Shengyu (2024)                                                                                                                                                              \\ \hline
+        Springer                 & 3                  & Steinmacher, Conte, Gerosa \& Redmiles (2019); Fershtman \& Gandal  (2007); Hannemann \& Klamma (2013) ; Hannemann \& Klamma (2013)                                               \\ \hline
+        ACM                      & 3                  & Steinmacher, Conte, Gerosa \& Redmiles (2015); Guizani, Chatterjee, Trinkenreich, May, Noa-Guevara, Russell \& Sarma (2021) ; Hannebauer \& Gruhn (2017)                          \\ \hline
+        Informs                  & 1                  & Roberts, Hann \& Slaughter (2006)                                                                                                                                                 \\ \hline
+        Taylor \& Francis Online & 1                  & Alexander Hars (2002)                                                                                                                                                             \\ \hline
+        EASST                    & 1                  & Freeman (2007)                                                                                                                                                                    \\ \hline
+    \end{tabular}
+    \caption{Selected papers for SLR}
+    \label{tab:databasePapers}
 \end{table}
 
 
 \begin{figure}[ht]
-\hspace*{-0.5in}
+    \hspace*{-0.5in}
     \centering
     \includegraphics[width=1.1\linewidth]{figs/paperRelation.png}
     \caption{Collaboration among open-source software researchers}
@@ -185,10 +175,10 @@ To systematically analyze the extracted data, we formed two distinct groups (see
     \centering
     \begin{tabular}{ | c | l |}
         \hline
-    Research question & Article ID\\ \hline
-    1 & A05, A06 , A08 , A09, A10, A11, A12, A13, A15, A16, A17, A18 \\  \hline
-    2 & A05, A06, A07, A09, A10, A12, A13, A16, A17, A18, A19, A20\\ \hline
-    3 & A01, A02, A03, A04, A14\\ \hline
+        Research question & Article ID                                                   \\ \hline
+        1                 & A05, A06 , A08 , A09, A10, A11, A12, A13, A15, A16, A17, A18 \\  \hline
+        2                 & A05, A06, A07, A09, A10, A12, A13, A16, A17, A18, A19, A20   \\ \hline
+        3                 & A01, A02, A03, A04, A14                                      \\ \hline
     \end{tabular}
     \caption{Data synthesis}
     \label{tab:rq_articleId}
@@ -199,5 +189,5 @@ To systematically analyze the extracted data, we formed two distinct groups (see
 
 
 
- 
+
 \clearpage  % This command will start the next section from the new page
