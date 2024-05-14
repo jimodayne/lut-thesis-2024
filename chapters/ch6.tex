@@ -1,6 +1,24 @@
 \section{Review reporting}
 \subsection{RQ1: Primary motivation for developers contributing in open source}
-The main purpose of this study is to find the movitvation of developers contributing in OSS project. For each selected study, I analyzed any motivation reported that was empirically identified or evaluated.
+
+The primary aim of this research is to uncover the reasons why developers participate in OSS projects. Each study chosen for this analysis was examined for any empirically identified or assessed motivations, such as career advancement, skill development, altruism, or enjoyment. By understanding these motivations, we hope to gain insights into what drives individuals to contribute to OSS projects and how this knowledge can be used to foster greater participation and collaboration in the future.
+
+The chart \ref{fig:articleMotivationCount} provides a visual representation of the number of articles published on various motivations that drive developers to contribute to open source software (OSS) projects. The motivations are categorized along the y-axis, while the number of articles devoted to each motivation is indicated on the x-axis.
+
+The data reveals a diverse range of motivations, with social factors emerging as prominent drivers of participation. The most extensively researched motivations, Signaling/Recognition (11 articles) and Play Value (10 articles), highlight the importance of social recognition and the inherent enjoyment developers derive from contributing to OSS projects. Personal Interest, Altruism and Ideology, and Learning also receive significant attention in the literature, with 8 articles dedicated to each. These motivations underscore the multifaceted nature of developer engagement, encompassing personal passions, a desire to contribute to the greater good, and the pursuit of knowledge and skill development.
+
+Conversely, the least explored motivations are Role Transformation and Improving Software Quality, with only 2 articles each. This disparity suggests that while the existing literature acknowledges the potential impact of these motivations, they remain relatively understudied compared to social factors.
+
+The diversity of motivations highlighted in the chart underscores the complexity of the open-source community. It is evident that developers are driven by a combination of social, personal, ideological, and career-oriented factors. This nuanced understanding is crucial for organizations and communities seeking to attract and retain developers. Tailored strategies that address the diverse motivations of developers are essential for fostering a thriving and sustainable open-source ecosystem.
+
+Moreover, the chart reveals the need for further research into less-explored motivations, such as Role Transformation and Improving Software Quality. A deeper understanding of these motivations could provide valuable insights into how to incentivize contributions that directly enhance the quality and impact of OSS projects.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/articleMotivationCount.png}
+    \caption{Number of articles mentioning each motivation}
+    \label{fig:articleMotivationCount}
+\end{figure}
 
 \subsubsection{Intrinsic motivations}
 Our exploration of developer motivation in open-source software (OSS) projects begins with intrinsic motivations, the internal drivers that fuel participation for personal satisfaction rather than external rewards. This encompasses a broad spectrum of factors, including: play value, the inherent enjoyment derived from the coding process; community engagement, the sense of belonging and collaboration found within OSS projects; learning, the opportunity to develop new skills and expand technical knowledge; personal interest, the desire to work on projects that align with individual passions; altruism and ideology, the belief in contributing to a greater good and supporting the open-source philosophy; need for autonomy, the freedom to work independently and creatively; and reciprocity/introjected regulation, the desire to contribute back to the community and maintain a sense of personal responsibility for the project's success. I will delve deeper into each of these intrinsic motivations in the following sections, examining their unique influence on developer behavior within the OSS landscape.
@@ -45,7 +63,9 @@ Moreover, the act of contributing to a shared knowledge base empowers developers
 
 4. Personal interest
 
-The concept of the "personal itch," as articulated by Eric S. Raymond, illuminates a key motivator for developer participation in OSS projects. Individuals often engage in OSS development to address a specific problem or augment functionality that directly aligns with their personal or professional needs. The desire to create a solution that may not otherwise exist, driven by this personal necessity, serves as a potent catalyst for engagement.
+Some developers get involved in open-source projects due to a personal interest in the subject matter or a desire to address a specific need or problem. This intrinsic motivation is driven by a passion for the technology, a curiosity about the project's objectives, or a personal connection to the software's utility. Developers who are personally invested in the project's success are more likely to contribute actively and engage with the community \cite{06ye2003toward,07zhao2024openrank,09lakhani2005hackers,11gerosa2021shifting,12choi2015characteristics,13li2012leadership,16ke2008motivations,17alexander2002working}
+
+The concept of the "personal itch," as articulated by Eric S. Raymond, illuminates a key motivator for developer participation in OSS projects \cite{holtgrewe2004articulating}. Individuals often engage in OSS development to address a specific problem or augment functionality that directly aligns with their personal or professional needs. The desire to create a solution that may not otherwise exist, driven by this personal necessity, serves as a potent catalyst for engagement.
 
 Furthermore, the inherent intellectual challenge of solving complex programming problems stands as a significant motivator for developers seeking to contribute to open-source initiatives. The opportunity to grapple with intricate coding puzzles, apply problem-solving strategies, and ultimately contribute to the solution can be deeply fulfilling for those driven by a passion for programming.
 
@@ -53,7 +73,7 @@ The sense of creativity fostered within the OSS landscape is another powerful dr
 
 5. Altruism and ideology
 
-OSS development thrives in part due to the contributions of individuals motivated by altruism and ideological convictions. This section explores these factors and their influence on developer participation. A significant driver for many developers is the inherent satisfaction derived from assisting others. Contributing to open-source projects allows them to directly improve software used by a wider community. This collaborative environment fosters a sense of purpose, as developers witness the positive impact of their work on others
+OSS development thrives in part due to the contributions of individuals motivated by altruism and ideological convictions \cite{07zhao2024openrank,08zhang2024paid,10wu2007empirical,11gerosa2021shifting,13li2012leadership,16ke2008motivations,17alexander2002working,18oreg2008exploring}. This section explores these factors and their influence on developer participation. A significant driver for many developers is the inherent satisfaction derived from assisting others. Contributing to open-source projects allows them to directly improve software used by a wider community. This collaborative environment fosters a sense of purpose, as developers witness the positive impact of their work on others
 
 Many developers are drawn to  the core principles of open-source software, including transparency, collaboration, and the democratization of technology. Participation allows them to contribute to a development model that emphasizes open access and fosters a sense of community.  Additionally, developers can be motivated by a desire to create software that benefits the greater good by being freely available and readily modifiable. This aligns with their altruistic desire to contribute to society and maintain strong social bonds.
 
@@ -61,13 +81,13 @@ Altruism and ideological alignment with open-source principles play a vital role
 
 6. Autonomy
 
-The open-source software environment provides a platform where developers can exercise a high degree of autonomy, making it particularly attractive to those valuing self-determination. The ability to select projects of interest, dictate their involvement, and contribute independently fulfills the intrinsic need for autonomy. This freedom to innovate and pursue solutions without rigid constraints becomes a compelling motivator, drawing developers who seek a sense of control and ownership over their contributions.
+The OSS environment provides a platform where developers can exercise a high degree of autonomy, making it particularly attractive to those valuing self-determination. The ability to select projects of interest, dictate their involvement, and contribute independently fulfills the intrinsic need for autonomy. This freedom to innovate and pursue solutions without rigid constraints becomes a compelling motivator, drawing developers who seek a sense of control and ownership over their contributions \cite{16ke2008motivations}.
 
 Unlike traditional software development environments that might be constrained by rigid hierarchies or top-down management styles, the open-source model empowers developers to chart their own path. They can choose to focus on areas that align with their passions, explore new technologies, or experiment with novel approaches without the need for constant external approval.  This sense of agency and self-direction is deeply fulfilling for those who thrive in environments where their initiative and creativity are valued.
 
 7. Reciprocity and introjected regulation
 
-Open-source communities thrive on a powerful sense of reciprocity. Developers who have directly benefited from freely available open-source software often feel a deep-seated obligation to give back, fueling their participation and ensuring the continued growth of the ecosystem. This desire to repay the community for the invaluable resources they've received becomes a motivating force.
+Open-source communities thrive on a powerful sense of reciprocity. Developers who have directly benefited from freely available open-source software often feel a deep-seated obligation to give back, fueling their participation and ensuring the continued growth of the ecosystem. This desire to repay the community for the invaluable resources they've received becomes a motivating force \cite{11gerosa2021shifting,13li2012leadership}.
 
 Additionally, introjected regulation plays a role in influencing developer behavior. The internalization of expectations can lead to feelings of pride, guilt, or shame regarding contributions to open-source projects. This desire to maintain a positive self-image, live up to personal standards, and avoid negative emotions can significantly drive participation as developers strive to meet both their own expectations and those they perceive the community holds.
 
@@ -118,6 +138,18 @@ Collectively, these findings illustrate the complex dynamics of mixed-motivation
 4. Role transformation
 
 One of the defining characteristics of OSS projects is the transformation of roles.  Unlike traditional software development models, where users and developers occupy distinct positions, OSS communities blur these lines.  Anyone, from seasoned developers to individuals with technical curiosity, can become a contributor.  This inclusive nature fosters a sense of ownership and empowers users to actively shape the project's evolution.  The potential to transition from user to developer offers a compelling incentive for participation, fostering a community where everyone's voice is valued, and diverse perspectives are encouraged.
+
+The progression of open source software (OSS) systems and communities throughout time is depicted in figure \ref{fig:roleMotivation}.  The responsibilities of developers and users become more entwined as projects expand and mature.  Users who use the program for work-related or personal purposes at first may become active contributors in the future out of a desire to improve the project, take care of certain issues, or impart their knowledge to the community.  This shift in position is evidence of the cooperative spirit of open-source development, where users are empowered to influence the software they use and contribute to a common goal of advancement and innovation.
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\linewidth]{figs/roleMotivation.png}
+    \caption{How open-source software systems and communities grow together \cite{06ye2003toward} }
+    \label{fig:roleMotivation}
+\end{figure}
+
+
 
 Furthermore, the ability to directly address user needs serves as a significant motivator for developers to contribute to open-source projects.  Whether these needs arise from professional or personal endeavors, developers within the OSS community are driven by the desire to create software that solves real-world problems and enhances the user experience.  This direct connection between developers and users fosters a collaborative environment where both parties benefit from the shared knowledge and dedication to continuous improvement.
 
@@ -180,6 +212,17 @@ The findings of the study indicated that the OpenRank Leaderboard effectively ev
 Beyond examining the motivations and social dynamics that propel developer participation in open-source projects, this research also delved into the barriers hindering their contributions. Through an analysis of five selected studies, several key challenges were identified that impede developer engagement and limit their ability to contribute effectively. The following sections will explore these barriers in detail, providing a comprehensive overview of the obstacles developers face in the open-source software development landscape. Based on a previous study by Mariam \cite{04guizani2021long}, the barriers to contribution were categorized into three main categories: technical challenges, social challenges, and process challenges. Each category encompasses distinct obstacles that hinder developer participation and require targeted interventions to overcome.
 
 
+The chart illustrates the obstacles individuals encounter when contributing to open source software projects which was found in 5 papers. The most frequent challenges revolve around social interaction, lack of timely responses or support, and technical difficulties, each occurring four times. Feeling intimidated or shy, cultural differences, and uncertainty about where to begin are also notable challenges, each happening twice. Other obstacles like submission procedures, governance compliance difficulties, unmet expectations, reception issues, inadequate or outdated projects, and prior technical experience are less common, each occurring once.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/barriers.png}
+    \caption{Barriers to contributing to open-source software projects}
+    \label{fig:barriers}
+\end{figure}
+
+
+
 \subsubsection{Technical challenges}
 
 A significant technical barrier to open-source contribution is the lack of technical background and domain expertise among potential contributors. Without a foundational understanding of the project's technological underpinnings, whether it's a specific programming language, framework, or software architecture, individuals may struggle to effectively engage and contribute to its development. Additionally, a lack of domain expertise in the subject matter the project addresses can hinder understanding of the problem space and the proposed solutions, making it difficult to provide meaningful contributions.
@@ -193,6 +236,7 @@ A significant technical barrier to open-source contribution is the lack of techn
 
 The diversity of programming languages used within and across open-source projects presents another challenge. Many projects utilize multiple languages for different components, and the open-source ecosystem as a whole encompasses a vast array of programming languages. Contributors often need to familiarize themselves with these languages to effectively understand and modify code, which can be daunting and time-consuming, particularly for those with limited programming experience or those accustomed to a single language.
 
+
 Becoming a contributing member of an OSS project often entails acquiring project-specific skills, a process that can span months to a year. This temporal investment is highlighted in Bird \cite{bird2007open} analysis of three OSS projects, where the median duration for newcomers to submit their initial patch and subsequently gain acceptance was revealed. This underscores the significant commitment required to successfully integrate into and contribute to OSS projects. The figure \ref{fig:timeskill} illustrates the time required to learn skills particular to a project, emphasizing the steep learning curve faced by newcomers.
 
 \begin{figure}[ht]
@@ -202,7 +246,7 @@ Becoming a contributing member of an OSS project often entails acquiring project
     \label{fig:timeskill}
 \end{figure}
 
-Discrepancies in technical skills and knowledge backgrounds among contributors can create a challenging environment for newcomers \cite{01steinmacher2015systematic}. Open-source projects often attract individuals with varying levels of expertise, from seasoned developers to those just starting their coding journey. Navigating a project with such diverse skill levels can be intimidating, making it difficult for newcomers to find their footing, ask questions without feeling inadequate, and contribute meaningfully.
+Discrepancies in technical skills and knowledge backgrounds among contributors can create a challenging environment for newcomers \cite{01steinmacher2015systematic,04guizani2021long}. Open-source projects often attract individuals with varying levels of expertise, from seasoned developers to those just starting their coding journey. Navigating a project with such diverse skill levels can be intimidating, making it difficult for newcomers to find their footing, ask questions without feeling inadequate, and contribute meaningfully \cite{14hannebauer2017relationship}.
 
 Inadequate or outdated project documentation further compounds the challenges faced by contributors. Clear, comprehensive, and up-to-date documentation is crucial for understanding the project's codebase, workflow, and contribution guidelines. It serves as a roadmap for new contributors, guiding them through the project's intricacies. Without well-maintained documentation, newcomers may struggle to locate the correct areas for modification, understand the reasoning behind existing code, and follow established conventions, ultimately hindering their ability to contribute effectively to the project's development.
 
@@ -210,9 +254,17 @@ Inadequate or outdated project documentation further compounds the challenges fa
 
 \subsubsection{Social challenges}
 
-Effective communication is paramount in the open-source landscape, yet it is often fraught with challenges that can impede participation and collaboration. Limitations in the available communication tools, such as reliance on text-based platforms or asynchronous communication channels, can hinder real-time interaction and create misunderstandings. Additionally, diverse communication styles among members, ranging from direct and concise to more elaborate and nuanced, can lead to misinterpretations and impede the development of shared understanding. Moreover, conflicting viewpoints and disagreements within the community, while natural, can escalate into unproductive debates that alienate newcomers and create an unwelcoming environment.
+Effective communication is paramount in the open-source landscape, yet it is often fraught with challenges that can impede participation and collaboration. Limitations in the available communication tools, such as reliance on text-based platforms or asynchronous communication channels, can hinder real-time interaction and create misunderstandings. Additionally, diverse communication styles among members, ranging from direct and concise to more elaborate and nuanced, can lead to misinterpretations and impede the development of shared understanding. Moreover, conflicting viewpoints and disagreements within the community, while natural, can escalate into unproductive debates that alienate newcomers and create an unwelcoming environment \cite{02steinmacher2015social}.
 
-The social dimension of open-source projects is equally crucial, as it fosters a sense of belonging and encourages collaboration. However, newcomers often encounter difficulties establishing connections with project members, particularly in large and established communities. This can lead to feelings of isolation and a lack of mentorship or guidance, making it challenging to navigate the project's intricacies and identify suitable contribution opportunities. Moreover, if newcomers perceive a lack of responsiveness or support from existing members, their enthusiasm may wane, and they may ultimately abandon their efforts.
+% Image
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/socialbarrier.png}
+    \caption{Social barriers from Steinmacher's study \cite{03steinmacher2019overcoming}}
+    \label{fig:socialbarrier}
+\end{figure}
+
+The social dimension of open-source projects is equally crucial, as it fosters a sense of belonging and encourages collaboration. However, newcomers often encounter difficulties establishing connections with project members, particularly in large and established communities. This can lead to feelings of isolation and a lack of mentorship or guidance, making it challenging to navigate the project's intricacies and identify suitable contribution opportunities. Moreover, if newcomers perceive a lack of responsiveness or support from existing members, their enthusiasm may wane, and they may ultimately abandon their efforts \cite{01steinmacher2015systematic,02steinmacher2015social,03steinmacher2019overcoming,04guizani2021long,14hannebauer2017relationship}.
 
 The responsiveness of the community is a critical determinant of newcomers' experiences and long-term engagement. When individuals feel that their questions are ignored, their contributions are not acknowledged, or their efforts are not valued, they may become demotivated and disengage from the project. Conversely, timely feedback, recognition, and support can boost morale and encourage continued participation. Therefore, fostering a culture of responsiveness and inclusivity is essential for attracting and retaining new contributors.
 
@@ -223,16 +275,24 @@ Cultural aspects, often overlooked but equally significant, can also create barr
 
 Embarking on a journey to contribute to open-source projects can often feel like navigating a complex maze. The path is riddled with challenges, particularly for newcomers who are unfamiliar with the unique ecosystem of each project. Understanding the specific workflow, which can vary significantly between projects, is a critical first step. This includes grasping the nuances of branching strategies, pull request etiquette, and the overall development cycle. Additionally, mastering version control systems like Git, with its array of commands and concepts, can be a steep learning curve.
 
+A study by Guizani \cite{04guizani2021long} highlighted significant process challenges faced by developers contributing to Apache Software Foundation (ASF) projects. The research revealed that developers encounter complexities in understanding and following the contribution process, from becoming a committer to getting their contributions accepted. Additionally, the study identified the process of adding new committers as bureaucratic and tedious, further complicating the onboarding experience. These process challenges are illustrated in figure \ref{fig:processChallenges} along with other barriers faced by developers contributing to ASF projects.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/processChallenges.png}
+    \caption{Challenges faced by developers contributing to ASF projects \cite{04guizani2021long}}
+    \label{fig:processChallenges}
+\end{figure}
+
+
+In corporate settings, product development teams often adhere to a rigid process, like Agile or Scrum, with clear roles, responsibilities, and hierarchies. Conversely, open-source projects operate more flexibly, with contributors often taking on diverse roles. This lack of formal structure can be challenging for newcomers, who may find it difficult to identify decision-makers, understand governance, or navigate informal power dynamics within the community.
+
+
 Adherence to coding standards and contribution guidelines is another significant hurdle. Each project has its own meticulously crafted conventions and best practices, often accumulated over years of development. Failing to comply with these standards can lead to rejected contributions or frustrating delays in getting changes merged. For newcomers, who are still acclimating to the project's culture and technical requirements, this can be a discouraging experience.
 
 Compounding these challenges is the frequent lack of comprehensive and user-friendly onboarding materials. While some projects may boast extensive documentation, it is often not tailored for newcomers or may be outdated, leaving crucial information buried or irrelevant. The absence of step-by-step tutorials that walk newcomers through the contribution process, clear explanations of the project's architecture and codebase, or readily available mentorship programs can leave them feeling lost and overwhelmed. This lack of guidance not only discourages potential contributors but also hinders their ability to make meaningful contributions, ultimately depriving the project of valuable talent and fresh perspectives.
 
-Moreover, the sheer size and complexity of some open-source projects can be intimidating for newcomers. With vast codebases, numerous contributors, and a long history of development, it can be difficult to know where to start or how to make a meaningful impact. The lack of a structured onboarding process, coupled with the fear of making mistakes or not understanding the project's intricacies, can create a sense of paralysis and prevent newcomers from taking that crucial first step.
-
-
-
-
-
+Moreover, developers may find certain open-source projects terrifying due to their immense scale and intricacy. With vast codebases, numerous contributors, and a long history of development, it can be difficult to know where to start or how to make a meaningful impact. The lack of a structured onboarding process, coupled with the fear of making mistakes or not understanding the project's intricacies, can create a sense of paralysis and prevent newcomers from taking that crucial first step.
 
 
 
