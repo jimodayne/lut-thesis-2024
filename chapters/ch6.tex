@@ -1,9 +1,75 @@
 \section{Review reporting}
+
+The selection process resulted in 20 papers, which were categorized using Wieringa's classification scheme \cite{wieringa2006requirements}. The following categories were relevant to this study:
+
+
+\begin{itemize}
+    \item Evaluation Research: Practical implementation and assessment of techniques or solutions, with a focus on investigating the outcomes.
+    \item Validation Research: Examination of novel techniques in a controlled environment, typically a laboratory setting, before practical implementation.
+    \item Solution Proposal: Presentation of a solution to a problem, highlighting its advantages, with a higher level of abstraction than validation research.
+    \item Philosophical Paper: Introduction of a new perspective on existing concepts by structuring the field through a taxonomy or framework.
+    \item Experience Paper: Narration of the author's personal experience, detailing what happened and how it occurred in practice.
+    \item Opinion Paper: Expression of the author's personal viewpoint on a specific issue, without relying on related work or research methodologies.
+\end{itemize}
+
+The types of contributions were categorized as follows:
+\begin{itemize}
+    \item Model: Introduction of a new model or framework to address a specific problem.
+    \item Method: Presentation of a new method or technique to solve a problem.
+    \item Metric: Introduction of a new metric or evaluation criterion to assess the performance of a system or solution.
+    \item Process: Description of a new process or workflow to improve efficiency or productivity.
+    \item Tool: Introduction of a new tool or software application to facilitate a specific task or process.
+\end{itemize}
+
+Here is a systematic map of the selected papers, categorized by research type, contribution type and research question:
+
+The table \ref{tab:systematicMap} presents a breakdown of research on various aspects of open-source software motivation, categorized by research methodology. The primary areas of interest are the factors motivating developers, the influence of social dynamics, and the obstacles to contribution. A significant majority of the studies (16 out of 20) employed evaluation research methods, primarily contributing models and methods to analyze these topics. While a few studies proposed solutions (3) or aimed to validate existing research (1), the emphasis on evaluation research indicates a strong focus on understanding and assessing the current landscape of open-source contributions.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{| m{7em} | m{5.5em}| m{5.5em} | m{5.5em} | m{3em} |}
+        \hline
+                                 & Evaluation Research                                                  & Solution Proposal & Validation Research & Total \\
+        \hline
+        Motivation of developers & Model: P05, P09, P10, P13, P15, P16, P17, P18. Method: P08, P11, P12 & Process: P06      &                     & 12    \\ \hline
+        Social dynamics impact   & Model: P20. Metric: P07                                              &                   & Metric: P19         & 3     \\ \hline
+        Contribution barriers    & Model: P01, P04, P14                                                 & Model: P02, P03   &                     & 5     \\ \hline
+        Total                    & 16                                                                   & 3                 & 1                   & 20    \\ \hline
+    \end{tabular}
+    \caption{Systematic map of selected papers}
+    \label{tab:systematicMap}
+\end{table}
+
+
+
+% The figure \ref{fig:articleTypeCount} provides a visual representation of the number of articles published in each category. The number of articles devoted to each category is indicated on the y-axis. The x-axis represents the year of publication. The legend indicates the category of each article.
+
+% 
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=1\linewidth]{figs/paperCate.png}
+%     \caption{Number of articles published in each category}
+%     \label{fig:articleTypeCount}
+% \end{figure}
+
+% Figure \ref{fig:contributionResearchType} illustrates the relationship between contribution type and research type.  Within the Evaluation Research category, the contribution type of "model" is the most prevalent, appearing in 12 articles. This is followed by "method" (3 articles) and "metric" (1 article). In the Solution Proposal category, the "model" contribution type is again the most common, found in 2 articles, with "process" contributing to 1 article. For Validation Research, only 1 article was identified, categorized by the "metric" contribution type.
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=1\linewidth]{figs/contribution_type_research.png}
+%     \caption{Contribution type by research type}
+%     \label{fig:contributionResearchType}
+% \end{figure}
+
+
+
+
 \subsection{RQ1: Primary motivation for developers contributing in open source}
 
-The primary aim of this research is to uncover the reasons why developers participate in OSS projects. Each study chosen for this analysis was examined for any empirically identified or assessed motivations, such as career advancement, skill development, altruism, or enjoyment. By understanding these motivations, we hope to gain insights into what drives individuals to contribute to OSS projects and how this knowledge can be used to foster greater participation and collaboration in the future.
+The primary aim of this research is to uncover the reasons why developers participate in OSS projects. Each study chosen for this analysis was examined for any empirically identified or assessed motivations, such as career advancement, skill development, altruism, or enjoyment. By understanding these motivations, I hope to gain insights into what drives individuals to contribute to OSS projects and how this knowledge can be used to foster greater participation and collaboration in the future.
 
-The chart \ref{fig:articleMotivationCount} provides a visual representation of the number of articles published on various motivations that drive developers to contribute to open source software projects. The motivations are categorized along the y-axis, while the number of articles devoted to each motivation is indicated on the x-axis.
+A visual depiction of the quantity of published articles on the different incentives that encourage developers to contribute to open source software projects can be seen in the chart \ref{fig:articleMotivationCount}. The amount of articles devoted to each motivation is shown on the x-axis, while the motivations are grouped along the y-axis.
 
 The data reveals a diverse range of motivations, with social factors emerging as prominent drivers of participation. The most extensively researched motivations, Signaling/Recognition (11 articles) and Play Value (10 articles), highlight the importance of social recognition and the inherent enjoyment developers derive from contributing to OSS projects. Personal Interest, Altruism and Ideology, and Learning also receive significant attention in the literature, with 8 articles dedicated to each. These motivations underscore the multifaceted nature of developer engagement, encompassing personal passions, a desire to contribute to the greater good, and the pursuit of knowledge and skill development.
 
