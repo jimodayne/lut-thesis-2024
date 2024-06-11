@@ -1,10 +1,11 @@
-\usepackage[utf8]{inputenc}	
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}         % language selection
 \usepackage{graphicx}               % [dvips] to be used with .eps figures
 % \usepackage[style=numeric,sorting=none,natbib=true,backend=biber,backref=false,dashed=false,giveninits=true,maxbibnames=99,articlein=false,uniquename=init]{biblatex} % settings for citations and references
 
-\usepackage[backend=bibtex8]{biblatex}
+% \usepackage[backend=bibtex8]{biblatex}
+\usepackage[style=ext-authoryear,sorting=nyt,natbib=true,backend=biber,backref=false,dashed=false,giveninits=true,maxbibnames=99,articlein=false,uniquename=init]{biblatex} % settings 
 
 \usepackage{enumitem}               % lists
 \usepackage{caption}[2004/07/16]    % figures/tabels captions
@@ -43,12 +44,12 @@
 \usepackage[figure,table]{totalcount}   % counting
 % setting up hyperref options
 \hypersetup{
-colorlinks=true,
-linkcolor=black,
-filecolor=black,
-urlcolor=black,
-citecolor=black,
-breaklinks=true
+  colorlinks=true,
+  linkcolor=black,
+  filecolor=black,
+  urlcolor=black,
+  citecolor=black,
+  breaklinks=true
 }
 \urlstyle{same}
 % setting up code listing options
@@ -59,35 +60,35 @@ breaklines=true,
 commentstyle=\color{blue},
 literate=
   {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-  {À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
-  {ã}{{\~a}}1 {ẽ}{{\~e}}1 {ĩ}{{\~i}}1 {õ}{{\~o}}1 {ũ}{{\~u}}1
-  {Ã}{{\~A}}1 {Ẽ}{{\~E}}1 {Ĩ}{{\~I}}1 {Õ}{{\~O}}1 {Ũ}{{\~U}}1
-  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-  {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-  {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
-  {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1 {¡}{{!`}}1
+{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+{À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+{ã}{{\~a}}1 {ẽ}{{\~e}}1 {ĩ}{{\~i}}1 {õ}{{\~o}}1 {ũ}{{\~u}}1
+{Ã}{{\~A}}1 {Ẽ}{{\~E}}1 {Ĩ}{{\~I}}1 {Õ}{{\~O}}1 {Ũ}{{\~U}}1
+{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1 {¡}{{!`}}1
 }
 % attaching .bib bibliography file with reference entries
 \addbibresource{ref.bib}
 % Inserts units on the right at symbol list
 \newcommand{\nomunit}[1]{\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
 % removing default extra skip between entries at nomenclature
-\setlength{\nomitemsep}{-\parsep}   
+\setlength{\nomitemsep}{-\parsep}
 % Setting up subgroups in nomenclature. Will appear in A-B-C-D-E-F order.
 \renewcommand{\nomgroup}[1]{%
- \ifthenelse{\equal{#1}{A}}{\item[Latin characters]\item}{%
-\ifthenelse{\equal{#1}{B}}{\item\item[Greek characters]\item}{}}{%
- \ifthenelse{\equal{#1}{C}}{\item\item[Subscripts]\item}{}}{%
- \ifthenelse{\equal{#1}{D}}{\item\item[Superscripts]\item}{}}{%
- \ifthenelse{\equal{#1}{E}}{\item\item[Abbreviations]\item}{}}{%
- \ifthenelse{\equal{#1}{F}}{\item\item[Dimensionless numbers]\item}{}}{}}
+  \ifthenelse{\equal{#1}{A}}{\item[Latin characters]\item}{%
+    \ifthenelse{\equal{#1}{B}}{\item\item[Greek characters]\item}{}}{%
+    \ifthenelse{\equal{#1}{C}}{\item\item[Subscripts]\item}{}}{%
+    \ifthenelse{\equal{#1}{D}}{\item\item[Superscripts]\item}{}}{%
+    \ifthenelse{\equal{#1}{E}}{\item\item[Abbreviations]\item}{}}{%
+    \ifthenelse{\equal{#1}{F}}{\item\item[Dimensionless numbers]\item}{}}{}}
 % setting up 1.5 spacing for the text
 \onehalfspacing
 % setting up fancy page style with the page number in outer top corner
@@ -108,18 +109,18 @@ literate=
 % setting up proper formats for the reference list and citation styles
 \DeclareFieldFormat[article,periodical]{number}{\mkbibparens{#1}}
 \DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{citetitle}{#1\isdot}
-\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{title}{#1\isdot} 
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{title}{#1\isdot}
 % \renewcommand*{\volnumdelim}{}
 \DeclareNameAlias{sortname}{family-given}
 \preto\fullcite{\AtNextCite{\defcounter{maxnames}{99}}}
 
 % setting up a user-defined command \cite with period inside the parentheses
 \DeclareCiteCommand{\citef}[\mkouterparencitedelims]
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-   \usebibmacro{cite}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}\addperiod}
+{\usebibmacro{prenote}}
+{\usebibmacro{citeindex}%
+  \usebibmacro{cite}}
+{\multicitedelim}
+{\usebibmacro{postnote}\addperiod}
 
 % Setting the heading name for symbols and abbreviations
 \renewcommand{\nomname}{Symbols and abbreviations}
@@ -129,18 +130,18 @@ literate=
 
 % Setting the section heading style
 \titleformat{\section}
-  {\Large}
-  {\thesection}{1em}{}
+{\Large}
+{\thesection}{1em}{}
 
 % Setting the subsection heading style
 \titleformat{\subsection}
-  {\large}
-  {\thesubsection}{1em}{}
+{\large}
+{\thesubsection}{1em}{}
 
 % Setting the subsubsection heading style
 \titleformat{\subsubsection}
-  {\normalsize}
-  {\thesubsubsection}{1em}{}
+{\normalsize}
+{\thesubsubsection}{1em}{}
 
 % Settings for table of content, list of figures and list of tables
 \renewcommand{\cftloftitlefont}{\normalfont\Large}  % Remove \bfseries from LoF title
